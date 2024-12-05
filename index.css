@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#body {
+    font-family: 'Courier New', Courier, monospace;
+}
+#container1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    -webkit-appearance: none;
+}
+#container1::-webkit-scrollbar {
+    display: none;
+}
+#navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+#logo_name {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+#logo {
+    width: 200px;
+}
+#saywork {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    font-size: 100px;
+    color: whitesmoke;
+}
+#describe {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    right: 15%;
+    font-size: 20px;
+    color: whitesmoke;
+    backdrop-filter: blur(3px);
+}
+#letter {
+    font-size: 120px;
+    color: orangered;
+    font-family: fantasy;
+}
+#nav {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    gap: 20px;
+}
+#nav li {
+    list-style: none;
+    color: orangered;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+    border: 2px solid whitesmoke;
+}
+#navbar li:hover {
+    color: white;
+    border-color: orangered;
+}
+#vedio {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+#items_name {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orangered;
+    color: whitesmoke;
+}
+#biryani {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#biryani_span {
+    color: orangered;
+    font-size: 20px;
+}
+h6 {
+    padding-left: 20px;
+    font-size: 100px;
+    color: transparent;
+    transition: all 2s;
+}
+#imgdiv:hover > h6 {
+    color: whitesmoke;
+}
+#imgdiv {
+    background: url(/assets/biryani_img.jpg) center/cover no-repeat;
+    width: 70%;
+    border-radius: 18px 0 0 18px;
+}
+#biryanicontent {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#biryani_items {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    height: 16vh;
+    right: 10px;
+}
+#biryani_items:hover {
+    box-shadow: 0 0 5px black;
+}
+#biryani_items_image {
+    width: 30%;
+}
+#biryani_items_button {
+    position: absolute;
+    bottom: 5px;
+    color: orangered;
+}
+#veg::-webkit-scrollbar, #nonveg::-webkit-scrollbar, #starters::-webkit-scrollbar {
+    display: none;
+}
+.items {
+    min-width: 400px;
+    height: 90%;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 20px;
+    transition: all 2s;
+}
+.items:hover {
+    box-shadow: 0 0 5px black;
+}
+#item_name {
+    padding-top: 3px;
+    border-top: 3px solid black;
+    color: rgb(170, 90, 61);
+    font-size: 20px;
+    padding-left: 5px;
+}
+#content {
+    position: absolute;
+    bottom: 85px;
+    font-size: 20px;
+    color: transparent;
+}
+.items:hover > #content {
+    color: white;
+    backdrop-filter: blur(5px);
+}
+#rice {
+    border-radius: 20px 20px 0 0;
+}
+#starters, #veg, #nonveg {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    overflow-x: auto;
+    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid orangered;
+    border-radius: 20px;
+}
+#starters #rice, #veg #rice, #nonveg #rice {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+#starters #items, #veg #items, #nonveg #items {
+    height: 95%;
+}
+button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(245, 72, 9);
+}
+button:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+#img1 {
+    width: 100%;
+}
+#footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+#footer h1 {
+    position: absolute;
+    left: 6.8%;
+    top: 40px;
+    color: whitesmoke;
+}
+#footer div {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 40px;
+}
+#footer ul h3 {
+    border-bottom: 1px solid whitesmoke;
+}
+#footer ul li {
+    margin-top: 10px;
+    display: flex;
+    color: black;
+}
+#innerfooter {
+    height: 75%;
+    border-bottom: 3px solid;
+}
